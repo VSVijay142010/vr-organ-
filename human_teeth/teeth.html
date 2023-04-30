@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>car_simulation</title>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js" ></script>
+    <script src="//unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js" ></script>
+    <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js" ></script>
+    </head>
+    <body>
+<a-scene id="scene" background="color:black" inspector-plugin-recast>
+
+
+    <a-assets>
+    <a-asset-item id="teeth" src="./scene.gltf">
+  </a-assets>
+<a-entity light="type:ambient;color:white;intenscity:2.5" ></a-entity>
+<a-entity id="human_teeth" gltf-model="#teeth" position="10 -2.63754 -150" rotation="360 360 360" scale="4 6 5"></a-entity>
+
+</body>
+</html>
